@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JupS – Website-Entwürfe</title>
+<meta name="description" content="Drei Design-Entwürfe für die neue JupS-Website – zum Anschauen und Vergleichen.">
+<link rel="icon" href="assets/img/favicon.svg">
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #23201b;
+  color: #ece7db;
+  font-family: 'Inter', -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+header { padding: 72px 0 20px; text-align: center; }
+header img.logo { height: 54px; margin: 0 auto 28px; filter: invert(92%) sepia(8%) saturate(300%) hue-rotate(10deg); }
+header h1 { font-size: clamp(28px, 4vw, 42px); font-weight: 700; letter-spacing: -0.01em; }
+header p { color: #b3ab99; max-width: 58ch; margin: 16px auto 0; }
+header p strong { color: #ece7db; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; padding: 44px 0 24px; }
+.variant {
+  background: #2b2721;
+  border: 1px solid #3f3a30;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.18s, border-color 0.18s, box-shadow 0.18s;
+}
+.variant:hover { transform: translateY(-4px); border-color: #6a6252; box-shadow: 0 18px 44px rgba(0,0,0,0.35); }
+.variant .shot { aspect-ratio: 16 / 11; overflow: hidden; border-bottom: 1px solid #3f3a30; background: #1c1915; }
+.variant .shot img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.variant .body { padding: 22px 24px 24px; flex: 1; display: flex; flex-direction: column; }
+.variant .tag { font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #b3ab99; margin-bottom: 6px; }
+.variant h2 { font-size: 22px; font-weight: 700; }
+.variant p { font-size: 14px; color: #b3ab99; margin: 10px 0 16px; flex: 1; }
+.variant .swatches { display: flex; gap: 6px; margin-bottom: 18px; }
+.variant .swatches span { width: 22px; height: 22px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.18); }
+.variant .go {
+  display: inline-block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  background: #ece7db;
+  color: #23201b;
+  border-radius: 8px;
+  padding: 11px 0;
+  transition: background 0.15s;
+}
+.variant .go:hover { background: #fff; }
+.hint { text-align: center; color: #8f8877; font-size: 14px; padding: 8px 24px 72px; }
+.hint a { color: #b3ab99; text-decoration: underline; text-underline-offset: 2px; }
+@media (max-width: 860px) { .grid { grid-template-columns: 1fr; max-width: 460px; margin: 0 auto; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <img class="logo" src="assets/img/logo/jups-logo.svg" alt="JupS – Upcycling Art">
+    <h1>Drei Entwürfe für die neue Website</h1>
+    <p>Alle drei zeigen dieselben Inhalte – Startseite, Produktübersicht und eine Beispiel-Produktseite (Messerblock) – nur das Design ist jeweils anders. <strong>Einfach durchklicken und den Favoriten aussuchen.</strong></p>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="grid">
+
+    <div class="variant">
+      <a class="shot" href="designs/a/index.html"><img src="assets/img/previews/a.jpg" alt="Vorschau Entwurf A"></a>
+      <div class="body">
+        <p class="tag">Entwurf A</p>
+        <h2>„Werkstatt"</h2>
+        <p>Dunkel und markant – Stahl, Eiche und Esse. Kräftige Schrift, Produktdaten wie ein Typenschild. Betont die handwerklich-robuste Seite.</p>
+        <div class="swatches">
+          <span style="background:#191713"></span>
+          <span style="background:#d96f32"></span>
+          <span style="background:#a89e8a"></span>
+          <span style="background:#eae3d4"></span>
+        </div>
+        <a class="go" href="designs/a/index.html">Entwurf A ansehen →</a>
+      </div>
+    </div>
+
+    <div class="variant">
+      <a class="shot" href="designs/b/index.html"><img src="assets/img/previews/b.jpg" alt="Vorschau Entwurf B"></a>
+      <div class="body">
+        <p class="tag">Entwurf B</p>
+        <h2>„Naturlicht"</h2>
+        <p>Hell, ruhig und modern – viel Weißraum, große Fotos, ein gedeckter Grünton. Wirkt wie ein zeitgemäßer, nachhaltiger Shop.</p>
+        <div class="swatches">
+          <span style="background:#faf8f3"></span>
+          <span style="background:#5f7352"></span>
+          <span style="background:#eef0e6"></span>
+          <span style="background:#33302a"></span>
+        </div>
+        <a class="go" href="designs/b/index.html">Entwurf B ansehen →</a>
+      </div>
+    </div>
+
+    <div class="variant">
+      <a class="shot" href="designs/c/index.html"><img src="assets/img/previews/c.jpg" alt="Vorschau Entwurf C"></a>
+      <div class="body">
+        <p class="tag">Entwurf C</p>
+        <h2>„Geschichten"</h2>
+        <p>Warm und persönlich wie ein Magazin – Serifenschrift, Papiertöne, Terrakotta. Erzählt die Geschichte hinter Material und Werkstatt.</p>
+        <div class="swatches">
+          <span style="background:#f5edde"></span>
+          <span style="background:#b0502a"></span>
+          <span style="background:#dccfb4"></span>
+          <span style="background:#382d21"></span>
+        </div>
+        <a class="go" href="designs/c/index.html">Entwurf C ansehen →</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<p class="hint">Vorschau der neuen Website für <a href="https://jups-art.de" target="_blank" rel="noopener">jups-art.de</a> · In jedem Entwurf führt die schwarze Leiste oben zurück zu dieser Übersicht.</p>
+
+</body>
+</html>
