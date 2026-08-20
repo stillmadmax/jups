@@ -23,7 +23,7 @@ header img.logo { height: 54px; margin: 0 auto 28px; filter: invert(92%) sepia(8
 header h1 { font-size: clamp(28px, 4vw, 42px); font-weight: 700; letter-spacing: -0.01em; }
 header p { color: #b3ab99; max-width: 58ch; margin: 16px auto 0; }
 header p strong { color: #ece7db; }
-.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; padding: 44px 0 24px; }
+.grid { display: grid; grid-template-columns: 1fr; max-width: 460px; margin: 0 auto; gap: 24px; padding: 36px 0 24px; }
 .variant {
   background: #2b2721;
   border: 1px solid #3f3a30;
@@ -56,7 +56,7 @@ header p strong { color: #ece7db; }
 .variant .go:hover { background: #fff; }
 .hint { text-align: center; color: #8f8877; font-size: 14px; padding: 8px 24px 72px; }
 .hint a { color: #b3ab99; text-decoration: underline; text-underline-offset: 2px; }
-@media (max-width: 860px) { .grid { grid-template-columns: 1fr; max-width: 460px; margin: 0 auto; } }
+@media (min-width: 860px) { .grid { grid-template-columns: repeat(3, 1fr); max-width: none; padding-top: 44px; } }
 </style>
 </head>
 <body>

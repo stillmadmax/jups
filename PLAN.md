@@ -77,7 +77,9 @@ Other existing content:
   at GitHub Pages via CNAME.
 - No cookies, no analytics, no external requests (self-hosted fonts) → keeps the
   Datenschutzerklärung minimal.
-- Responsive (phone-first — buyers of handmade goods browse mobile), semantic HTML,
+- **Mobile-first** (requirement): base CSS targets phones, `min-width` media
+  queries enhance for tablet/desktop — buyers of handmade goods browse mobile.
+  Semantic HTML,
   proper `lang="de"`, meta/OG tags per product.
 
 ## 5. Phase 1 – The Three Design Proposals
