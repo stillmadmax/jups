@@ -145,6 +145,9 @@ skin differs), the JupS logo, mobile-first responsiveness, and both CTAs
 1. **Etsy shop URL:** https://www.etsy.com/shop/JupSArt — used for all Etsy CTA buttons.
 2. **Impressum:** keep Martina Schell as on the old site.
 3. **Prices:** show "ab X €" on all product pages.
+4. **Design chosen (2026-08-23): Variant A „Werkstatt".** Variants B and C and
+   the chooser page were removed; the full site was built from Variant A at the
+   repo root (all products, Über, Kontakt, Versand, Impressum, Datenschutz).
 
 ## 7. Open Questions
 

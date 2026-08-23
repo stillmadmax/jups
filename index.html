@@ -3,127 +3,137 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>JupS – Website-Entwürfe</title>
-<meta name="description" content="Drei Design-Entwürfe für die neue JupS-Website – zum Anschauen und Vergleichen.">
+<title>JupS – Upcycling Art | Unikate mit Geschichte</title>
+<meta name="description" content="Handgefertigte Unikate aus alten Fassdauben, Eichenholz und Eisenbahnschienen. Upcycling-Manufaktur aus Bisingen.">
 <link rel="icon" href="assets/img/favicon.svg">
 <link rel="stylesheet" href="assets/fonts.css">
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body {
-  background: #23201b;
-  color: #ece7db;
-  font-family: 'Inter', -apple-system, 'Helvetica Neue', Arial, sans-serif;
-  line-height: 1.65;
-  -webkit-font-smoothing: antialiased;
-}
-a { color: inherit; text-decoration: none; }
-.wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
-header { padding: 72px 0 20px; text-align: center; }
-header img.logo { height: 54px; margin: 0 auto 28px; filter: invert(92%) sepia(8%) saturate(300%) hue-rotate(10deg); }
-header h1 { font-size: clamp(28px, 4vw, 42px); font-weight: 700; letter-spacing: -0.01em; }
-header p { color: #b3ab99; max-width: 58ch; margin: 16px auto 0; }
-header p strong { color: #ece7db; }
-.grid { display: grid; grid-template-columns: 1fr; max-width: 460px; margin: 0 auto; gap: 24px; padding: 36px 0 24px; }
-.variant {
-  background: #2b2721;
-  border: 1px solid #3f3a30;
-  border-radius: 14px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.18s, border-color 0.18s, box-shadow 0.18s;
-}
-.variant:hover { transform: translateY(-4px); border-color: #6a6252; box-shadow: 0 18px 44px rgba(0,0,0,0.35); }
-.variant .shot { aspect-ratio: 16 / 11; overflow: hidden; border-bottom: 1px solid #3f3a30; background: #1c1915; }
-.variant .shot img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
-.variant .body { padding: 22px 24px 24px; flex: 1; display: flex; flex-direction: column; }
-.variant .tag { font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #b3ab99; margin-bottom: 6px; }
-.variant h2 { font-size: 22px; font-weight: 700; }
-.variant p { font-size: 14px; color: #b3ab99; margin: 10px 0 16px; flex: 1; }
-.variant .swatches { display: flex; gap: 6px; margin-bottom: 18px; }
-.variant .swatches span { width: 22px; height: 22px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.18); }
-.variant .go {
-  display: inline-block;
-  text-align: center;
-  font-weight: 600;
-  font-size: 15px;
-  background: #ece7db;
-  color: #23201b;
-  border-radius: 8px;
-  padding: 11px 0;
-  transition: background 0.15s;
-}
-.variant .go:hover { background: #fff; }
-.hint { text-align: center; color: #8f8877; font-size: 14px; padding: 8px 24px 72px; }
-.hint a { color: #b3ab99; text-decoration: underline; text-underline-offset: 2px; }
-@media (min-width: 860px) { .grid { grid-template-columns: repeat(3, 1fr); max-width: none; padding-top: 44px; } }
-</style>
+<link rel="stylesheet" href="style.css">
+<style>.hero::before { --hero-img: url('assets/img/products/messerblock-aus-fassdaube/img-1179.jpg'); }</style>
 </head>
 <body>
 
-<header>
+<header class="site">
   <div class="wrap">
-    <img class="logo" src="assets/img/logo/jups-logo.svg" alt="JupS – Upcycling Art">
-    <h1>Drei Entwürfe für die neue Website</h1>
-    <p>Alle drei zeigen dieselben Inhalte – Startseite, Produktübersicht und eine Beispiel-Produktseite (Messerblock) – nur das Design ist jeweils anders. <strong>Einfach durchklicken und den Favoriten aussuchen.</strong></p>
+    <a class="logo" href="./"><img src="assets/img/logo/jups-logo-light.svg" alt="JupS – Upcycling Art"></a>
+    <nav class="main">
+      <a href="./" class="active">Start</a>
+      <a href="produkte/">Produkte</a>
+      <a href="ueber/">Über mich</a>
+      <a href="kontakt/">Kontakt</a>
+      <a class="nav-etsy" href="https://www.etsy.com/shop/JupSArt" target="_blank" rel="noopener">Etsy-Shop ↗</a>
+    </nav>
   </div>
 </header>
 
-<div class="wrap">
-  <div class="grid">
-
-    <div class="variant">
-      <a class="shot" href="designs/a/index.html"><img src="assets/img/previews/a.jpg" alt="Vorschau Entwurf A"></a>
-      <div class="body">
-        <p class="tag">Entwurf A</p>
-        <h2>„Werkstatt"</h2>
-        <p>Dunkel und markant – Stahl, Eiche und Esse. Kräftige Schrift, Produktdaten wie ein Typenschild. Betont die handwerklich-robuste Seite.</p>
-        <div class="swatches">
-          <span style="background:#191713"></span>
-          <span style="background:#d96f32"></span>
-          <span style="background:#a89e8a"></span>
-          <span style="background:#eae3d4"></span>
-        </div>
-        <a class="go" href="designs/a/index.html">Entwurf A ansehen →</a>
-      </div>
+<div class="hero">
+  <div class="wrap">
+    <p class="kicker">Upcycling-Manufaktur · Bisingen</p>
+    <h1>Unikate mit Geschichte</h1>
+    <p class="lead">Was andere wegwerfen, ist für mich der Anfang einer neuen Geschichte. Aus alten Fassdauben, Eichenbrettern und Eisenbahnschienen entstehen in meiner Werkstatt echte Einzelstücke – mit Charakter, Handwerk und Herz.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="produkte/">Produkte entdecken</a>
+      <a class="btn btn-ghost" href="https://www.etsy.com/shop/JupSArt" target="_blank" rel="noopener">Zum Etsy-Shop</a>
     </div>
-
-    <div class="variant">
-      <a class="shot" href="designs/b/index.html"><img src="assets/img/previews/b.jpg" alt="Vorschau Entwurf B"></a>
-      <div class="body">
-        <p class="tag">Entwurf B</p>
-        <h2>„Naturlicht"</h2>
-        <p>Hell, ruhig und modern – viel Weißraum, große Fotos, ein gedeckter Grünton. Wirkt wie ein zeitgemäßer, nachhaltiger Shop.</p>
-        <div class="swatches">
-          <span style="background:#faf8f3"></span>
-          <span style="background:#5f7352"></span>
-          <span style="background:#eef0e6"></span>
-          <span style="background:#33302a"></span>
-        </div>
-        <a class="go" href="designs/b/index.html">Entwurf B ansehen →</a>
-      </div>
-    </div>
-
-    <div class="variant">
-      <a class="shot" href="designs/c/index.html"><img src="assets/img/previews/c.jpg" alt="Vorschau Entwurf C"></a>
-      <div class="body">
-        <p class="tag">Entwurf C</p>
-        <h2>„Geschichten"</h2>
-        <p>Warm und persönlich wie ein Magazin – Serifenschrift, Papiertöne, Terrakotta. Erzählt die Geschichte hinter Material und Werkstatt.</p>
-        <div class="swatches">
-          <span style="background:#f5edde"></span>
-          <span style="background:#b0502a"></span>
-          <span style="background:#dccfb4"></span>
-          <span style="background:#382d21"></span>
-        </div>
-        <a class="go" href="designs/c/index.html">Entwurf C ansehen →</a>
-      </div>
-    </div>
-
   </div>
 </div>
 
-<p class="hint">Vorschau der neuen Website für <a href="https://jups-art.de" target="_blank" rel="noopener">jups-art.de</a> · In jedem Entwurf führt die schwarze Leiste oben zurück zu dieser Übersicht.</p>
+<section class="block">
+  <div class="wrap">
+    <div class="two-col">
+      <div class="text">
+        <div class="sec-head" style="margin-bottom:24px">
+          <span class="sec-num">01 — Material</span>
+          <h2>Material mit Seele – Holz, Metall &amp; Patina</h2>
+        </div>
+        <p>Ich verwende ausschließlich gebrauchte, hochwertige Materialien. Sie bringen Geschichte, Charakter und eine ganz eigene Ästhetik mit – und genau das macht den Reiz meiner Arbeit aus.</p>
+        <ul class="materials">
+          <li>Eichenholz von alten Dielen, Scheunen oder Möbelstücken</li>
+          <li>Fassdauben aus Weinfässern mit Jahrzehnten auf dem Buckel</li>
+          <li>Eisenbahnschienen, die einst tonnenschwere Züge getragen haben</li>
+          <li>Fundstücke aus Industrie, Landwirtschaft und traditionellem Handwerk</li>
+        </ul>
+      </div>
+      <img class="framed" src="assets/img/home/_work/jusp2.jpg" alt="Alte Fassdaube vor der Bearbeitung">
+    </div>
+  </div>
+</section>
+
+<section class="block alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">02 — Aus der Werkstatt</span>
+      <h2>Handgemacht &amp; nachhaltig</h2>
+      <p class="sub">Alles in liebevoller Handarbeit gefertigt – mit minimalem Maschineneinsatz, dafür maximalem Gespür fürs Material. Jedes Stück ein Unikat.</p>
+    </div>
+    <div class="grid">
+      <a class="card" href="produkte/messerblock-aus-fassdaube/">
+        <div class="thumb"><img src="assets/img/products/messerblock-aus-fassdaube/thumb/img-0260.jpg" alt="Magnetischer Messerblock aus alten Fassdauben"></div>
+        <div class="body">
+          <p class="cat">Küchenaccessoires</p>
+          <h3>Messerblock aus Fassdauben</h3>
+          <p class="teaser">Die gebogene Form der alten Fassdauben eignet sich perfekt für edle Messerblöcke. Ein Hauch von Wein haftet oft noch im Holz.</p>
+          <div class="price-row"><span class="price">ab 129 €</span><span class="more">Ansehen →</span></div>
+        </div>
+      </a>
+      <a class="card" href="produkte/amboss/">
+        <div class="thumb"><img src="assets/img/products/amboss/thumb/img-2663.jpg" alt="Amboss aus einer originalen Eisenbahnschiene"></div>
+        <div class="body">
+          <p class="cat">Amboss</p>
+          <h3>Amboss aus Eisenbahnschiene</h3>
+          <p class="teaser">Kompakte Ambosse für Werkstatt oder Schreibtisch – aus originalen Schienenstücken. Schwer, stabil, mit industriellem Charme.</p>
+          <div class="price-row"><span class="price">229 €</span><span class="more">Ansehen →</span></div>
+        </div>
+      </a>
+      <a class="card" href="produkte/kartenhalter-xl-aus-eichenholz/">
+        <div class="thumb"><img src="assets/img/products/kartenhalter-xl-aus-eichenholz/thumb/img-6058.jpg" alt="Kartenhalter aus altem Eichenholz"></div>
+        <div class="body">
+          <p class="cat">Kartenhalter</p>
+          <h3>Kartenhalter aus Eichenholz</h3>
+          <p class="teaser">Praktische Alltagshelfer aus alten Eichenbrettern – für Visitenkarten, Fotos oder Postkarten. Schlicht, ehrlich, zeitlos.</p>
+          <div class="price-row"><span class="price">ab 25 €</span><span class="more">Ansehen →</span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <span class="sec-num">03 — Haltung</span>
+    <blockquote class="claim">Nachhaltigkeit ist kein Trend – <em>sondern Basis meiner Arbeit.</em></blockquote>
+    <div class="values">
+      <div class="v"><h3>Ressourcenschonend</h3><p>Ohne neues Holz zu fällen – gute Materialien verdienen ein zweites Leben.</p></div>
+      <div class="v"><h3>Recycelte Materialien</h3><p>Keine Neuware, keine Verschwendung. Jeder Rohstoff hat schon ein Leben hinter sich.</p></div>
+      <div class="v"><h3>Plastikfrei verpackt</h3><p>Umweltschonend versendet – von der Werkstatt bis zu Ihnen.</p></div>
+      <div class="v"><h3>Regional &amp; handwerklich</h3><p>Keine Massenproduktion, keine Importware. Handarbeit aus Bisingen.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block alt contact-band" id="kontakt">
+  <div class="wrap">
+    <span class="sec-num" style="display:block;margin-bottom:10px">04 — Kontakt</span>
+    <h2>Lust auf ein Stück mit Geschichte?</h2>
+    <p>Interesse an einem Stück, Fragen zu Material und Technik oder eine Idee für ein individuelles Upcycling-Projekt? Ich freue mich auf Ihre Nachricht.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="mailto:jups.upcycling@gmail.com?subject=Anfrage%20über%20jups-art.de">E-Mail senden</a>
+      <a class="btn btn-ghost" href="https://www.etsy.com/shop/JupSArt" target="_blank" rel="noopener">Auf Etsy kaufen</a>
+    </div>
+    <p class="note">Ich bemühe mich, alle Anfragen innerhalb von 48 Stunden zu beantworten.</p>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <p>© 2026 JupS – Upcycling Art · Handgefertigte Unikate mit Herz und Leidenschaft</p>
+    <nav>
+      <a href="kontakt/">Kontakt</a>
+      <a href="versand/">Versand</a>
+      <a href="impressum/">Impressum</a>
+      <a href="datenschutz/">Datenschutz</a>
+    </nav>
+  </div>
+</footer>
 
 </body>
 </html>

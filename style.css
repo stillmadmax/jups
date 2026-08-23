@@ -38,22 +38,6 @@ h1, h2, h3 {
 
 .wrap { max-width: 1160px; margin: 0 auto; padding: 0 20px; }
 
-/* Preview bar (draft navigation, not part of the design) */
-.preview-bar {
-  background: #000;
-  color: #bbb;
-  font-size: 12px;
-  padding: 7px 12px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2px 12px;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: 0.02em;
-  text-align: center;
-}
-.preview-bar a { color: #fff; text-decoration: underline; text-underline-offset: 2px; }
-.preview-bar strong { color: #fff; font-weight: 600; }
 
 /* Header: stacked on phones, single sticky row from tablet up */
 header.site {
@@ -271,7 +255,6 @@ footer.site nav a:hover { color: var(--text); }
 }
 .filters button:hover { color: var(--text); border-color: var(--text); }
 .filters button.on { background: var(--accent); border-color: var(--accent); color: #1a130c; }
-.preview-note { font-size: 13px; color: var(--steel); margin-top: 32px; }
 
 /* Product detail */
 .crumb {
@@ -390,4 +373,22 @@ footer.site nav a:hover { color: var(--text); }
   .filters { gap: 10px; margin-bottom: 36px; }
   .filters button { padding: 9px 18px; }
   .kicker::before { width: 36px; }
+}
+
+/* Text pages (about, contact, shipping, legal) */
+.page-body { padding-bottom: 72px; }
+.prose { max-width: 720px; }
+.prose h2 { font-size: 20px; margin: 40px 0 14px; }
+.prose h2:first-child { margin-top: 0; }
+.prose p { margin-bottom: 14px; font-size: 15px; }
+.prose ul { margin: 0 0 14px 20px; }
+.prose li { margin-bottom: 6px; font-size: 15px; }
+.prose a { color: var(--accent); }
+.prose a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.prose .muted { color: var(--muted); }
+.prose address {
+  font-style: normal;
+  border-left: 2px solid var(--accent);
+  padding: 4px 0 4px 18px;
+  margin-bottom: 14px;
 }
