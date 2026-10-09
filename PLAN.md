@@ -156,12 +156,13 @@ skin differs), the JupS logo, mobile-first responsiveness, and both CTAs
 6. **Prices follow Etsy (2026-10-09)** — purchases happen there, so the site must match.
 7. **SEO URLs use https://jups-art.de/** (canonical, Open Graph, schema.org Product,
    sitemap.xml, robots.txt) — they only become effective after the domain switch.
+8. **Logo stays unchanged (2026-10-09)** — the same mark is branded onto the products.
+9. **Shipping is included on all products (2026-10-09)**, matching Etsy's free shipping.
+10. **Etsy reviews on the home page (2026-10-09)**, without customer names.
 
 ## 7. Open Questions
 
-1. Keep the existing logo (jups-logo.svg) unchanged? Recommendation: yes — the same
-   mark is branded onto the products.
-2. Next, together with Max: should jups-art.de point to the new site (DNS/CNAME change)?
+1. Next, together with Max: should jups-art.de point to the new site (DNS/CNAME change)?
 
 ## 8. Milestones
 
