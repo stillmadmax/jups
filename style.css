@@ -445,7 +445,7 @@ footer.site nav a:hover { color: var(--text); }
   .contact-band .actions { max-width: none; justify-content: center; }
   .grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
   .values { grid-template-columns: repeat(2, 1fr); }
-  .reviews { grid-auto-flow: row; grid-template-columns: repeat(2, 1fr); gap: 1px; margin: 0; padding: 0; overflow: visible; background: var(--line); border: 1px solid var(--line); }
+  .reviews { grid-auto-flow: row; grid-template-columns: repeat(2, 1fr); gap: 1px; margin: 0; padding: 0; overflow: visible; background: var(--line); border: 1px solid var(--line); align-items: stretch; contain: none; }
   .review { border: 0; }
   .filters { flex-wrap: wrap; overflow: visible; margin: 0 0 30px; padding: 0; }
   .gallery .thumbs { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; margin-top: 8px; }
