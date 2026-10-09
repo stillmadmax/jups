@@ -36,18 +36,21 @@
 <link rel="icon" href="../../assets/img/favicon.svg">
 <link rel="stylesheet" href="../../assets/fonts.css">
 <link rel="stylesheet" href="../../style.css">
+<script>document.documentElement.classList.add('js')</script>
+<script src="../../assets/site.js" defer></script>
 </head>
 <body>
 
 <header class="site">
   <div class="wrap">
     <a class="logo" href="../../"><img src="../../assets/img/logo/jups-logo-light.svg" alt="JupS – Upcycling Art"></a>
-    <nav class="main">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav"><span class="bars" aria-hidden="true"></span>Menü</button>
+    <nav class="main" id="nav">
       <a href="../../">Start</a>
       <a href="../" class="active">Produkte</a>
       <a href="../../ueber/">Über mich</a>
       <a href="../../kontakt/">Kontakt</a>
-      <a class="nav-etsy" href="https://www.etsy.com/shop/JupSArt" target="_blank" rel="noopener">Etsy-Shop ↗</a>
+      <a class="nav-etsy" href="https://www.etsy.com/shop/JupSArt" target="_blank" rel="noopener">Etsy-Shop<span aria-hidden="true"> ↗</span><span class="sr-only"> (öffnet in neuem Tab)</span></a>
     </nav>
   </div>
 </header>
@@ -57,21 +60,40 @@
 
   <div class="product">
     <div class="gallery">
-      <div class="main"><img id="main-img" src="../../assets/img/products/messerblock-aus-fassdaube/img-1179.jpg" alt="Magnetischer Messerblock aus alten Fassdauben"></div>
+      <div class="stage">
+        <div class="track" id="track" tabindex="0" role="group" aria-label="Produktfotos, zum Blättern wischen">
+        <img src="../../assets/img/products/messerblock-aus-fassdaube/img-1179.jpg" alt="Magnetischer Messerblock aus alten Fassdauben – Bild 1 von 13" width="1600" height="1200">
+        <img src="../../assets/img/products/messerblock-aus-fassdaube/img-0260.jpg" alt="Magnetischer Messerblock aus alten Fassdauben – Bild 2 von 13" width="1200" height="1600" loading="lazy" decoding="async">
+        <img src="../../assets/img/products/messerblock-aus-fassdaube/img-5111.jpg" alt="Magnetischer Messerblock aus alten Fassdauben – Bild 3 von 13" width="1600" height="1200" loading="lazy" decoding="async">
+        <img src="../../assets/img/products/messerblock-aus-fassdaube/img-0799.jpg" alt="Magnetischer Messerblock aus alten Fassdauben – Bild 4 von 13" width="1600" height="1200" loading="lazy" decoding="async">
+        <img src="../../assets/img/products/messerblock-aus-fassdaube/img-0802.jpg" alt="Magnetischer Messerblock aus alten Fassdauben – Bild 5 von 13" width="1200" height="1600" loading="lazy" decoding="async">
+        <img src="../../assets/img/products/messerblock-aus-fassdaube/img-0808.jpg" alt="Magnetischer Messerblock aus alten Fassdauben – Bild 6 von 13" width="1200" height="1600" loading="lazy" decoding="async">
+        <img src="../../assets/img/products/messerblock-aus-fassdaube/img-1107.jpg" alt="Magnetischer Messerblock aus alten Fassdauben – Bild 7 von 13" width="1200" height="1600" loading="lazy" decoding="async">
+        <img src="../../assets/img/products/messerblock-aus-fassdaube/img-1129.jpg" alt="Magnetischer Messerblock aus alten Fassdauben – Bild 8 von 13" width="1600" height="1200" loading="lazy" decoding="async">
+        <img src="../../assets/img/products/messerblock-aus-fassdaube/img-1145.jpg" alt="Magnetischer Messerblock aus alten Fassdauben – Bild 9 von 13" width="1600" height="1200" loading="lazy" decoding="async">
+        <img src="../../assets/img/products/messerblock-aus-fassdaube/img-1149.jpg" alt="Magnetischer Messerblock aus alten Fassdauben – Bild 10 von 13" width="1200" height="1600" loading="lazy" decoding="async">
+        <img src="../../assets/img/products/messerblock-aus-fassdaube/img-1150.jpg" alt="Magnetischer Messerblock aus alten Fassdauben – Bild 11 von 13" width="1600" height="1200" loading="lazy" decoding="async">
+        <img src="../../assets/img/products/messerblock-aus-fassdaube/img-5056.jpg" alt="Magnetischer Messerblock aus alten Fassdauben – Bild 12 von 13" width="1200" height="1600" loading="lazy" decoding="async">
+        <img src="../../assets/img/products/messerblock-aus-fassdaube/img-5057.jpg" alt="Magnetischer Messerblock aus alten Fassdauben – Bild 13 von 13" width="1200" height="1600" loading="lazy" decoding="async">
+        </div>
+        <button class="nav-btn prev" id="prev" type="button" aria-label="Vorheriges Bild">‹</button>
+        <button class="nav-btn next" id="next" type="button" aria-label="Nächstes Bild">›</button>
+        <p class="count" aria-hidden="true"><span id="count">1</span> / 13</p>
+      </div>
       <div class="thumbs" id="thumbs">
-        <img class="on" src="../../assets/img/products/messerblock-aus-fassdaube/thumb/img-1179.jpg" data-full="../../assets/img/products/messerblock-aus-fassdaube/img-1179.jpg" alt="Ansicht 1">
-        <img src="../../assets/img/products/messerblock-aus-fassdaube/thumb/img-0260.jpg" data-full="../../assets/img/products/messerblock-aus-fassdaube/img-0260.jpg" alt="Ansicht 2">
-        <img src="../../assets/img/products/messerblock-aus-fassdaube/thumb/img-5111.jpg" data-full="../../assets/img/products/messerblock-aus-fassdaube/img-5111.jpg" alt="Ansicht 3">
-        <img src="../../assets/img/products/messerblock-aus-fassdaube/thumb/img-0799.jpg" data-full="../../assets/img/products/messerblock-aus-fassdaube/img-0799.jpg" alt="Ansicht 4">
-        <img src="../../assets/img/products/messerblock-aus-fassdaube/thumb/img-0802.jpg" data-full="../../assets/img/products/messerblock-aus-fassdaube/img-0802.jpg" alt="Ansicht 5">
-        <img src="../../assets/img/products/messerblock-aus-fassdaube/thumb/img-0808.jpg" data-full="../../assets/img/products/messerblock-aus-fassdaube/img-0808.jpg" alt="Ansicht 6">
-        <img src="../../assets/img/products/messerblock-aus-fassdaube/thumb/img-1107.jpg" data-full="../../assets/img/products/messerblock-aus-fassdaube/img-1107.jpg" alt="Ansicht 7">
-        <img src="../../assets/img/products/messerblock-aus-fassdaube/thumb/img-1129.jpg" data-full="../../assets/img/products/messerblock-aus-fassdaube/img-1129.jpg" alt="Ansicht 8">
-        <img src="../../assets/img/products/messerblock-aus-fassdaube/thumb/img-1145.jpg" data-full="../../assets/img/products/messerblock-aus-fassdaube/img-1145.jpg" alt="Ansicht 9">
-        <img src="../../assets/img/products/messerblock-aus-fassdaube/thumb/img-1149.jpg" data-full="../../assets/img/products/messerblock-aus-fassdaube/img-1149.jpg" alt="Ansicht 10">
-        <img src="../../assets/img/products/messerblock-aus-fassdaube/thumb/img-1150.jpg" data-full="../../assets/img/products/messerblock-aus-fassdaube/img-1150.jpg" alt="Ansicht 11">
-        <img src="../../assets/img/products/messerblock-aus-fassdaube/thumb/img-5056.jpg" data-full="../../assets/img/products/messerblock-aus-fassdaube/img-5056.jpg" alt="Ansicht 12">
-        <img src="../../assets/img/products/messerblock-aus-fassdaube/thumb/img-5057.jpg" data-full="../../assets/img/products/messerblock-aus-fassdaube/img-5057.jpg" alt="Ansicht 13">
+        <button type="button" aria-label="Bild 1 von 13 anzeigen" aria-current="true"><img src="../../assets/img/products/messerblock-aus-fassdaube/thumb/img-1179.jpg" alt="" width="480" height="360" loading="lazy" decoding="async"></button>
+        <button type="button" aria-label="Bild 2 von 13 anzeigen" aria-current="false"><img src="../../assets/img/products/messerblock-aus-fassdaube/thumb/img-0260.jpg" alt="" width="360" height="480" loading="lazy" decoding="async"></button>
+        <button type="button" aria-label="Bild 3 von 13 anzeigen" aria-current="false"><img src="../../assets/img/products/messerblock-aus-fassdaube/thumb/img-5111.jpg" alt="" width="480" height="360" loading="lazy" decoding="async"></button>
+        <button type="button" aria-label="Bild 4 von 13 anzeigen" aria-current="false"><img src="../../assets/img/products/messerblock-aus-fassdaube/thumb/img-0799.jpg" alt="" width="480" height="360" loading="lazy" decoding="async"></button>
+        <button type="button" aria-label="Bild 5 von 13 anzeigen" aria-current="false"><img src="../../assets/img/products/messerblock-aus-fassdaube/thumb/img-0802.jpg" alt="" width="360" height="480" loading="lazy" decoding="async"></button>
+        <button type="button" aria-label="Bild 6 von 13 anzeigen" aria-current="false"><img src="../../assets/img/products/messerblock-aus-fassdaube/thumb/img-0808.jpg" alt="" width="360" height="480" loading="lazy" decoding="async"></button>
+        <button type="button" aria-label="Bild 7 von 13 anzeigen" aria-current="false"><img src="../../assets/img/products/messerblock-aus-fassdaube/thumb/img-1107.jpg" alt="" width="360" height="480" loading="lazy" decoding="async"></button>
+        <button type="button" aria-label="Bild 8 von 13 anzeigen" aria-current="false"><img src="../../assets/img/products/messerblock-aus-fassdaube/thumb/img-1129.jpg" alt="" width="480" height="360" loading="lazy" decoding="async"></button>
+        <button type="button" aria-label="Bild 9 von 13 anzeigen" aria-current="false"><img src="../../assets/img/products/messerblock-aus-fassdaube/thumb/img-1145.jpg" alt="" width="480" height="360" loading="lazy" decoding="async"></button>
+        <button type="button" aria-label="Bild 10 von 13 anzeigen" aria-current="false"><img src="../../assets/img/products/messerblock-aus-fassdaube/thumb/img-1149.jpg" alt="" width="360" height="480" loading="lazy" decoding="async"></button>
+        <button type="button" aria-label="Bild 11 von 13 anzeigen" aria-current="false"><img src="../../assets/img/products/messerblock-aus-fassdaube/thumb/img-1150.jpg" alt="" width="480" height="360" loading="lazy" decoding="async"></button>
+        <button type="button" aria-label="Bild 12 von 13 anzeigen" aria-current="false"><img src="../../assets/img/products/messerblock-aus-fassdaube/thumb/img-5056.jpg" alt="" width="360" height="480" loading="lazy" decoding="async"></button>
+        <button type="button" aria-label="Bild 13 von 13 anzeigen" aria-current="false"><img src="../../assets/img/products/messerblock-aus-fassdaube/thumb/img-5057.jpg" alt="" width="360" height="480" loading="lazy" decoding="async"></button>
       </div>
     </div>
 
@@ -79,11 +101,12 @@
       <p class="cat">Küchenaccessoires · Handgefertigtes Unikat</p>
       <h1>Magnetischer Messerblock aus alten Fassdauben</h1>
       <p class="price">ab 139 €</p>
-      <p class="tax">Preis inkl. MwSt.; aufgrund des Kleinunternehmerstatus wird gemäß § 19 UStG die MwSt. in der Rechnung nicht ausgewiesen.</p>
+      <p class="tax">Inkl. Versand. Preis inkl. MwSt.; aufgrund des Kleinunternehmerstatus wird gemäß § 19 UStG die MwSt. in der Rechnung nicht ausgewiesen.</p>
       <div class="actions">
         <a class="btn btn-primary" href="mailto:jups.upcycling@gmail.com?subject=Anfrage%20Messerblock%20aus%20Fassdauben">Kontakt aufnehmen</a>
-        <a class="btn btn-ghost" href="https://www.etsy.com/shop/JupSArt" target="_blank" rel="noopener">Auf Etsy kaufen</a>
+        <a class="btn btn-ghost" href="https://www.etsy.com/shop/JupSArt" target="_blank" rel="noopener">Im Etsy-Shop ansehen<span class="sr-only"> (öffnet in neuem Tab)</span></a>
       </div>
+      <p class="mail-alt">oder direkt an <a href="mailto:jups.upcycling@gmail.com">jups.upcycling@gmail.com</a> <button type="button" class="copy" data-copy="jups.upcycling@gmail.com">Kopieren</button></p>
       <div class="desc">
         <p>Der Messerblock besteht aus alten Fassdauben mit originaler Kennzeichnungsfarbe des Winzers. In die Rückseite sind starke Scheibenmagnete (25×5&nbsp;mm, Typ N45, vernickelt) versenkt und mit Originalholzstopfen verschlossen.</p>
         <p>Die Grundplatte ist eine massive, grob geschliffene Stahlplatte mit einer Dicke von 8–15&nbsp;mm, je nach Ausführung – lediglich eingeölt, um Korrosion vorzubeugen. Auf der Unterseite sind Filzgleiter angebracht.</p>
@@ -113,6 +136,12 @@
   </div>
 </div>
 
+<div class="buybar" id="buybar">
+  <span class="price">ab 139 €</span>
+  <a class="btn btn-primary" href="mailto:jups.upcycling@gmail.com?subject=Anfrage%20Messerblock%20aus%20Fassdauben">Anfragen</a>
+  <a class="btn btn-ghost" href="https://www.etsy.com/shop/JupSArt" target="_blank" rel="noopener">Etsy<span class="sr-only"> (öffnet in neuem Tab)</span></a>
+</div>
+
 <footer class="site">
   <div class="wrap">
     <p>© 2026 JupS – Upcycling Art · Handgefertigte Unikate mit Herz und Leidenschaft</p>
@@ -125,15 +154,6 @@
   </div>
 </footer>
 
-<script>
-document.querySelectorAll('#thumbs img').forEach(function (t) {
-  t.addEventListener('click', function () {
-    document.getElementById('main-img').src = t.dataset.full;
-    document.querySelectorAll('#thumbs img').forEach(function (o) { o.classList.remove('on'); });
-    t.classList.add('on');
-  });
-});
-</script>
 
 </body>
 </html>

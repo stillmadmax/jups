@@ -16,18 +16,21 @@
 <link rel="icon" href="../assets/img/favicon.svg">
 <link rel="stylesheet" href="../assets/fonts.css">
 <link rel="stylesheet" href="../style.css">
+<script>document.documentElement.classList.add('js')</script>
+<script src="../assets/site.js" defer></script>
 </head>
 <body>
 
 <header class="site">
   <div class="wrap">
     <a class="logo" href="../"><img src="../assets/img/logo/jups-logo-light.svg" alt="JupS – Upcycling Art"></a>
-    <nav class="main">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav"><span class="bars" aria-hidden="true"></span>Menü</button>
+    <nav class="main" id="nav">
       <a href="../">Start</a>
       <a href="../produkte/">Produkte</a>
       <a href="../ueber/">Über mich</a>
       <a href="./" class="active">Kontakt</a>
-      <a class="nav-etsy" href="https://www.etsy.com/shop/JupSArt" target="_blank" rel="noopener">Etsy-Shop ↗</a>
+      <a class="nav-etsy" href="https://www.etsy.com/shop/JupSArt" target="_blank" rel="noopener">Etsy-Shop<span aria-hidden="true"> ↗</span><span class="sr-only"> (öffnet in neuem Tab)</span></a>
     </nav>
   </div>
 </header>
@@ -43,7 +46,7 @@
 <div class="wrap page-body">
   <div class="actions" style="max-width:420px;margin-bottom:44px">
     <a class="btn btn-primary" href="mailto:jups.upcycling@gmail.com?subject=Anfrage%20über%20jups-art.de">E-Mail an jups.upcycling@gmail.com</a>
-    <a class="btn btn-ghost" href="https://www.etsy.com/shop/JupSArt" target="_blank" rel="noopener">Zum Etsy-Shop</a>
+    <a class="btn btn-ghost" href="https://www.etsy.com/shop/JupSArt" target="_blank" rel="noopener">Zum Etsy-Shop<span class="sr-only"> (öffnet in neuem Tab)</span></a>
   </div>
 
   <div class="prose">

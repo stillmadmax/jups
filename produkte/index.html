@@ -16,18 +16,21 @@
 <link rel="icon" href="../assets/img/favicon.svg">
 <link rel="stylesheet" href="../assets/fonts.css">
 <link rel="stylesheet" href="../style.css">
+<script>document.documentElement.classList.add('js')</script>
+<script src="../assets/site.js" defer></script>
 </head>
 <body>
 
 <header class="site">
   <div class="wrap">
     <a class="logo" href="../"><img src="../assets/img/logo/jups-logo-light.svg" alt="JupS – Upcycling Art"></a>
-    <nav class="main">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav"><span class="bars" aria-hidden="true"></span>Menü</button>
+    <nav class="main" id="nav">
       <a href="../">Start</a>
       <a href="./" class="active">Produkte</a>
       <a href="../ueber/">Über mich</a>
       <a href="../kontakt/">Kontakt</a>
-      <a class="nav-etsy" href="https://www.etsy.com/shop/JupSArt" target="_blank" rel="noopener">Etsy-Shop ↗</a>
+      <a class="nav-etsy" href="https://www.etsy.com/shop/JupSArt" target="_blank" rel="noopener">Etsy-Shop<span aria-hidden="true"> ↗</span><span class="sr-only"> (öffnet in neuem Tab)</span></a>
     </nav>
   </div>
 </header>
@@ -41,19 +44,19 @@
 </div>
 
 <div class="wrap" style="padding-bottom:88px">
-  <div class="filters" id="filters">
-    <button class="on" data-cat="alle">Alle</button>
-    <button data-cat="Amboss">Amboss</button>
-    <button data-cat="Küchenaccessoires">Küchenaccessoires</button>
-    <button data-cat="Bretter">Bretter</button>
-    <button data-cat="Kartenhalter">Kartenhalter</button>
-    <button data-cat="Wanddekoration">Wanddekoration</button>
-    <button data-cat="Sonstiges">Sonstiges</button>
+  <div class="filters" id="filters" role="group" aria-label="Nach Kategorie filtern">
+    <button type="button" class="on" aria-pressed="true" data-cat="alle">Alle</button>
+    <button type="button" aria-pressed="false" data-cat="Amboss">Amboss</button>
+    <button type="button" aria-pressed="false" data-cat="Küchenaccessoires">Küchenaccessoires</button>
+    <button type="button" aria-pressed="false" data-cat="Bretter">Bretter</button>
+    <button type="button" aria-pressed="false" data-cat="Kartenhalter">Kartenhalter</button>
+    <button type="button" aria-pressed="false" data-cat="Wanddekoration">Wanddekoration</button>
+    <button type="button" aria-pressed="false" data-cat="Sonstiges">Sonstiges</button>
   </div>
 
   <div class="grid" id="products">
     <a class="card" href="messerblock-aus-fassdaube/" data-cat="Küchenaccessoires">
-      <div class="thumb"><img src="../assets/img/products/messerblock-aus-fassdaube/thumb/img-0260.jpg" alt="Magnetischer Messerblock aus alten Fassdauben"></div>
+      <div class="thumb"><img src="../assets/img/products/messerblock-aus-fassdaube/thumb/img-0260.jpg" alt="Magnetischer Messerblock aus alten Fassdauben" width="360" height="480" loading="lazy" decoding="async"></div>
       <div class="body">
         <p class="cat">Küchenaccessoires</p>
         <h3>Magnetischer Messerblock aus alten Fassdauben</h3>
@@ -62,7 +65,7 @@
       </div>
     </a>
     <a class="card" href="messerblock-xxl-aus-fassdaube/" data-cat="Küchenaccessoires">
-      <div class="thumb"><img src="../assets/img/products/messerblock-xxl-aus-fassdaube/thumb/etsy-01.jpg" alt="Magnetischer XXL-Messerblock aus alter Fassdaube"></div>
+      <div class="thumb"><img src="../assets/img/products/messerblock-xxl-aus-fassdaube/thumb/etsy-01.jpg" alt="Magnetischer XXL-Messerblock aus alter Fassdaube" width="480" height="360" loading="lazy" decoding="async"></div>
       <div class="body">
         <p class="cat">Küchenaccessoires</p>
         <h3>Magnetischer XXL-Messerblock aus alter Fassdaube</h3>
@@ -71,7 +74,7 @@
       </div>
     </a>
     <a class="card" href="messerblock-xxl-multiplex-birke/" data-cat="Küchenaccessoires">
-      <div class="thumb"><img src="../assets/img/products/messerblock-xxl-multiplex-birke/thumb/etsy-01.jpg" alt="Magnetischer XXL-Messerblock aus Multiplex Birke"></div>
+      <div class="thumb"><img src="../assets/img/products/messerblock-xxl-multiplex-birke/thumb/etsy-01.jpg" alt="Magnetischer XXL-Messerblock aus Multiplex Birke" width="480" height="360" loading="lazy" decoding="async"></div>
       <div class="body">
         <p class="cat">Küchenaccessoires</p>
         <h3>Magnetischer XXL-Messerblock aus Multiplex Birke</h3>
@@ -80,7 +83,7 @@
       </div>
     </a>
     <a class="card" href="amboss/" data-cat="Amboss">
-      <div class="thumb"><img src="../assets/img/products/amboss/thumb/img-2663.jpg" alt="Amboss aus einer originalen Eisenbahnschiene"></div>
+      <div class="thumb"><img src="../assets/img/products/amboss/thumb/img-2663.jpg" alt="Amboss aus einer originalen Eisenbahnschiene" width="360" height="480" loading="lazy" decoding="async"></div>
       <div class="body">
         <p class="cat">Amboss</p>
         <h3>Amboss</h3>
@@ -89,7 +92,7 @@
       </div>
     </a>
     <a class="card" href="schneidebrett-aus-eiche/" data-cat="Bretter">
-      <div class="thumb"><img src="../assets/img/products/schneidebrett-aus-eiche/thumb/schneidebrett.jpg" alt="Schneidebrett aus Eiche"></div>
+      <div class="thumb"><img src="../assets/img/products/schneidebrett-aus-eiche/thumb/schneidebrett.jpg" alt="Schneidebrett aus Eiche" width="480" height="360" loading="lazy" decoding="async"></div>
       <div class="body">
         <p class="cat">Bretter</p>
         <h3>Schneidebrett aus Eiche</h3>
@@ -98,7 +101,7 @@
       </div>
     </a>
     <a class="card" href="kartenhalter-xl-aus-eichenholz/" data-cat="Kartenhalter">
-      <div class="thumb"><img src="../assets/img/products/kartenhalter-xl-aus-eichenholz/thumb/img-6058.jpg" alt="Kartenhalter aus altem Eichenholz"></div>
+      <div class="thumb"><img src="../assets/img/products/kartenhalter-xl-aus-eichenholz/thumb/img-6058.jpg" alt="Kartenhalter aus altem Eichenholz" width="360" height="480" loading="lazy" decoding="async"></div>
       <div class="body">
         <p class="cat">Kartenhalter</p>
         <h3>Kartenhalter aus altem Eichenholz</h3>
@@ -107,7 +110,7 @@
       </div>
     </a>
     <a class="card" href="kartenhalter-aus-fassdaube/" data-cat="Kartenhalter">
-      <div class="thumb"><img src="../assets/img/products/kartenhalter-aus-fassdaube/thumb/etsy-01.jpg" alt="Kartenhalter aus alter Fassdaube"></div>
+      <div class="thumb"><img src="../assets/img/products/kartenhalter-aus-fassdaube/thumb/etsy-01.jpg" alt="Kartenhalter aus alter Fassdaube" width="480" height="360" loading="lazy" decoding="async"></div>
       <div class="body">
         <p class="cat">Kartenhalter</p>
         <h3>Kartenhalter aus alter Fassdaube</h3>
@@ -116,7 +119,7 @@
       </div>
     </a>
     <a class="card" href="eierbecher-aus-eichenholz/" data-cat="Küchenaccessoires">
-      <div class="thumb"><img src="../assets/img/products/eierbecher-aus-eichenholz/thumb/img-6242.jpg" alt="Eierbecher aus hochwertigem Eichenholz"></div>
+      <div class="thumb"><img src="../assets/img/products/eierbecher-aus-eichenholz/thumb/img-6242.jpg" alt="Eierbecher aus hochwertigem Eichenholz" width="480" height="360" loading="lazy" decoding="async"></div>
       <div class="body">
         <p class="cat">Küchenaccessoires</p>
         <h3>Eierbecher aus Eichenholz</h3>
@@ -125,7 +128,7 @@
       </div>
     </a>
     <a class="card" href="foto-holz-epoxy/" data-cat="Wanddekoration">
-      <div class="thumb"><img src="../assets/img/products/foto-holz-epoxy/thumb/img-0559.jpg" alt="Foto auf Holz mit Epoxy-Versiegelung"></div>
+      <div class="thumb"><img src="../assets/img/products/foto-holz-epoxy/thumb/img-0559.jpg" alt="Foto auf Holz mit Epoxy-Versiegelung" width="480" height="360" loading="lazy" decoding="async"></div>
       <div class="body">
         <p class="cat">Wanddekoration</p>
         <h3>Foto auf Holz mit Epoxy-Versiegelung</h3>
@@ -134,7 +137,7 @@
       </div>
     </a>
     <a class="card" href="sonstiges/" data-cat="Sonstiges">
-      <div class="thumb"><img src="../assets/img/products/sonstiges/thumb/img-0545.jpg" alt="Beispiele realisierter Objekte"></div>
+      <div class="thumb"><img src="../assets/img/products/sonstiges/thumb/img-0545.jpg" alt="Beispiele realisierter Objekte" width="360" height="480" loading="lazy" decoding="async"></div>
       <div class="body">
         <p class="cat">Sonstiges</p>
         <h3>Sonstiges &amp; Auftragsarbeiten</h3>
@@ -157,18 +160,6 @@
   </div>
 </footer>
 
-<script>
-document.querySelectorAll('#filters button').forEach(function (btn) {
-  btn.addEventListener('click', function () {
-    document.querySelectorAll('#filters button').forEach(function (b) { b.classList.remove('on'); });
-    btn.classList.add('on');
-    var cat = btn.dataset.cat;
-    document.querySelectorAll('#products .card').forEach(function (card) {
-      card.style.display = (cat === 'alle' || card.dataset.cat === cat) ? '' : 'none';
-    });
-  });
-});
-</script>
 
 </body>
 </html>

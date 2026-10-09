@@ -36,18 +36,21 @@
 <link rel="icon" href="../../assets/img/favicon.svg">
 <link rel="stylesheet" href="../../assets/fonts.css">
 <link rel="stylesheet" href="../../style.css">
+<script>document.documentElement.classList.add('js')</script>
+<script src="../../assets/site.js" defer></script>
 </head>
 <body>
 
 <header class="site">
   <div class="wrap">
     <a class="logo" href="../../"><img src="../../assets/img/logo/jups-logo-light.svg" alt="JupS – Upcycling Art"></a>
-    <nav class="main">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav"><span class="bars" aria-hidden="true"></span>Menü</button>
+    <nav class="main" id="nav">
       <a href="../../">Start</a>
       <a href="../" class="active">Produkte</a>
       <a href="../../ueber/">Über mich</a>
       <a href="../../kontakt/">Kontakt</a>
-      <a class="nav-etsy" href="https://www.etsy.com/shop/JupSArt" target="_blank" rel="noopener">Etsy-Shop ↗</a>
+      <a class="nav-etsy" href="https://www.etsy.com/shop/JupSArt" target="_blank" rel="noopener">Etsy-Shop<span aria-hidden="true"> ↗</span><span class="sr-only"> (öffnet in neuem Tab)</span></a>
     </nav>
   </div>
 </header>
@@ -57,14 +60,26 @@
 
   <div class="product">
     <div class="gallery">
-      <div class="main"><img id="main-img" src="../../assets/img/products/foto-holz-epoxy/img-0559.jpg" alt="Foto auf Holz mit Epoxy-Versiegelung"></div>
+      <div class="stage">
+        <div class="track" id="track" tabindex="0" role="group" aria-label="Produktfotos, zum Blättern wischen">
+        <img src="../../assets/img/products/foto-holz-epoxy/img-0559.jpg" alt="Foto auf Holz mit Epoxy-Versiegelung – Bild 1 von 6" width="1600" height="1200">
+        <img src="../../assets/img/products/foto-holz-epoxy/img-0561.jpg" alt="Foto auf Holz mit Epoxy-Versiegelung – Bild 2 von 6" width="1600" height="1200" loading="lazy" decoding="async">
+        <img src="../../assets/img/products/foto-holz-epoxy/img-0562.jpg" alt="Foto auf Holz mit Epoxy-Versiegelung – Bild 3 von 6" width="1600" height="1200" loading="lazy" decoding="async">
+        <img src="../../assets/img/products/foto-holz-epoxy/img-0565.jpg" alt="Foto auf Holz mit Epoxy-Versiegelung – Bild 4 von 6" width="1200" height="1600" loading="lazy" decoding="async">
+        <img src="../../assets/img/products/foto-holz-epoxy/img-0571.jpg" alt="Foto auf Holz mit Epoxy-Versiegelung – Bild 5 von 6" width="1600" height="1200" loading="lazy" decoding="async">
+        <img src="../../assets/img/products/foto-holz-epoxy/img-6370.jpg" alt="Foto auf Holz mit Epoxy-Versiegelung – Bild 6 von 6" width="1600" height="1200" loading="lazy" decoding="async">
+        </div>
+        <button class="nav-btn prev" id="prev" type="button" aria-label="Vorheriges Bild">‹</button>
+        <button class="nav-btn next" id="next" type="button" aria-label="Nächstes Bild">›</button>
+        <p class="count" aria-hidden="true"><span id="count">1</span> / 6</p>
+      </div>
       <div class="thumbs" id="thumbs">
-        <img class="on" src="../../assets/img/products/foto-holz-epoxy/thumb/img-0559.jpg" data-full="../../assets/img/products/foto-holz-epoxy/img-0559.jpg" alt="Ansicht 1">
-        <img src="../../assets/img/products/foto-holz-epoxy/thumb/img-0561.jpg" data-full="../../assets/img/products/foto-holz-epoxy/img-0561.jpg" alt="Ansicht 2">
-        <img src="../../assets/img/products/foto-holz-epoxy/thumb/img-0562.jpg" data-full="../../assets/img/products/foto-holz-epoxy/img-0562.jpg" alt="Ansicht 3">
-        <img src="../../assets/img/products/foto-holz-epoxy/thumb/img-0565.jpg" data-full="../../assets/img/products/foto-holz-epoxy/img-0565.jpg" alt="Ansicht 4">
-        <img src="../../assets/img/products/foto-holz-epoxy/thumb/img-0571.jpg" data-full="../../assets/img/products/foto-holz-epoxy/img-0571.jpg" alt="Ansicht 5">
-        <img src="../../assets/img/products/foto-holz-epoxy/thumb/img-6370.jpg" data-full="../../assets/img/products/foto-holz-epoxy/img-6370.jpg" alt="Ansicht 6">
+        <button type="button" aria-label="Bild 1 von 6 anzeigen" aria-current="true"><img src="../../assets/img/products/foto-holz-epoxy/thumb/img-0559.jpg" alt="" width="480" height="360" loading="lazy" decoding="async"></button>
+        <button type="button" aria-label="Bild 2 von 6 anzeigen" aria-current="false"><img src="../../assets/img/products/foto-holz-epoxy/thumb/img-0561.jpg" alt="" width="480" height="360" loading="lazy" decoding="async"></button>
+        <button type="button" aria-label="Bild 3 von 6 anzeigen" aria-current="false"><img src="../../assets/img/products/foto-holz-epoxy/thumb/img-0562.jpg" alt="" width="480" height="360" loading="lazy" decoding="async"></button>
+        <button type="button" aria-label="Bild 4 von 6 anzeigen" aria-current="false"><img src="../../assets/img/products/foto-holz-epoxy/thumb/img-0565.jpg" alt="" width="360" height="480" loading="lazy" decoding="async"></button>
+        <button type="button" aria-label="Bild 5 von 6 anzeigen" aria-current="false"><img src="../../assets/img/products/foto-holz-epoxy/thumb/img-0571.jpg" alt="" width="480" height="360" loading="lazy" decoding="async"></button>
+        <button type="button" aria-label="Bild 6 von 6 anzeigen" aria-current="false"><img src="../../assets/img/products/foto-holz-epoxy/thumb/img-6370.jpg" alt="" width="480" height="360" loading="lazy" decoding="async"></button>
       </div>
     </div>
 
@@ -72,11 +87,12 @@
       <p class="cat">Wanddekoration · Handgefertigtes Unikat</p>
       <h1>Foto auf Holz mit Epoxy-Versiegelung</h1>
       <p class="price">ab 36 €</p>
-      <p class="tax">Preis inkl. MwSt.; aufgrund des Kleinunternehmerstatus wird gemäß § 19 UStG die MwSt. in der Rechnung nicht ausgewiesen.</p>
+      <p class="tax">Inkl. Versand. Preis inkl. MwSt.; aufgrund des Kleinunternehmerstatus wird gemäß § 19 UStG die MwSt. in der Rechnung nicht ausgewiesen.</p>
       <div class="actions">
         <a class="btn btn-primary" href="mailto:jups.upcycling@gmail.com?subject=Anfrage%20Foto%20auf%20Holz%20mit%20Epoxy">Kontakt aufnehmen</a>
-        <a class="btn btn-ghost" href="https://www.etsy.com/shop/JupSArt" target="_blank" rel="noopener">Auf Etsy kaufen</a>
+        <a class="btn btn-ghost" href="https://www.etsy.com/de/listing/1370306380/foto-auf-holz-mit-epoxyglasur-epoxy-foto" target="_blank" rel="noopener">Auf Etsy kaufen<span class="sr-only"> (öffnet in neuem Tab)</span></a>
       </div>
+      <p class="mail-alt">oder direkt an <a href="mailto:jups.upcycling@gmail.com">jups.upcycling@gmail.com</a> <button type="button" class="copy" data-copy="jups.upcycling@gmail.com">Kopieren</button></p>
       <div class="desc">
         <p>Ihr Foto wird mittels Transfermedium direkt auf massives Eichenholz übertragen und anschließend mit transparentem Epoxidharz versiegelt – für eine beeindruckende Tiefenwirkung.</p>
         <p>Das Besondere: Das Foto ist nicht aufgeklebt, sondern direkt in das Holz integriert. So entsteht ein Bild mit ganz eigenem Charakter.</p>
@@ -104,6 +120,12 @@
   </div>
 </div>
 
+<div class="buybar" id="buybar">
+  <span class="price">ab 36 €</span>
+  <a class="btn btn-primary" href="mailto:jups.upcycling@gmail.com?subject=Anfrage%20Foto%20auf%20Holz%20mit%20Epoxy">Anfragen</a>
+  <a class="btn btn-ghost" href="https://www.etsy.com/de/listing/1370306380/foto-auf-holz-mit-epoxyglasur-epoxy-foto" target="_blank" rel="noopener">Etsy<span class="sr-only"> (öffnet in neuem Tab)</span></a>
+</div>
+
 <footer class="site">
   <div class="wrap">
     <p>© 2026 JupS – Upcycling Art · Handgefertigte Unikate mit Herz und Leidenschaft</p>
@@ -116,15 +138,6 @@
   </div>
 </footer>
 
-<script>
-document.querySelectorAll('#thumbs img').forEach(function (t) {
-  t.addEventListener('click', function () {
-    document.getElementById('main-img').src = t.dataset.full;
-    document.querySelectorAll('#thumbs img').forEach(function (o) { o.classList.remove('on'); });
-    t.classList.add('on');
-  });
-});
-</script>
 
 </body>
 </html>

@@ -17,18 +17,21 @@
 <link rel="icon" href="../assets/img/favicon.svg">
 <link rel="stylesheet" href="../assets/fonts.css">
 <link rel="stylesheet" href="../style.css">
+<script>document.documentElement.classList.add('js')</script>
+<script src="../assets/site.js" defer></script>
 </head>
 <body>
 
 <header class="site">
   <div class="wrap">
     <a class="logo" href="../"><img src="../assets/img/logo/jups-logo-light.svg" alt="JupS – Upcycling Art"></a>
-    <nav class="main">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav"><span class="bars" aria-hidden="true"></span>Menü</button>
+    <nav class="main" id="nav">
       <a href="../">Start</a>
       <a href="../produkte/">Produkte</a>
       <a href="../ueber/">Über mich</a>
       <a href="../kontakt/">Kontakt</a>
-      <a class="nav-etsy" href="https://www.etsy.com/shop/JupSArt" target="_blank" rel="noopener">Etsy-Shop ↗</a>
+      <a class="nav-etsy" href="https://www.etsy.com/shop/JupSArt" target="_blank" rel="noopener">Etsy-Shop<span aria-hidden="true"> ↗</span><span class="sr-only"> (öffnet in neuem Tab)</span></a>
     </nav>
   </div>
 </header>
@@ -54,7 +57,7 @@
     <p>Diese Website ist eine rein statische Informationsseite. Sie verwendet keine Cookies, keine Analyse- oder Tracking-Dienste und keine Kontaktformulare. Schriften und Bilder werden direkt von dieser Website ausgeliefert; es werden keine Inhalte von Drittanbietern nachgeladen.</p>
 
     <h2>3. Hosting (GitHub Pages)</h2>
-    <p>Diese Website wird über GitHub Pages gehostet, einen Dienst der GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. Beim Aufruf der Website verarbeitet GitHub technisch notwendige Daten wie Ihre IP-Adresse in Server-Logs, um die Website auszuliefern und die Sicherheit des Dienstes zu gewährleisten (Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO – berechtigtes Interesse am zuverlässigen Betrieb der Website). Dabei kann eine Datenverarbeitung in den USA stattfinden. Weitere Informationen finden Sie in der <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">Datenschutzerklärung von GitHub</a>.</p>
+    <p>Diese Website wird über GitHub Pages gehostet, einen Dienst der GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. Beim Aufruf der Website verarbeitet GitHub technisch notwendige Daten wie Ihre IP-Adresse in Server-Logs, um die Website auszuliefern und die Sicherheit des Dienstes zu gewährleisten (Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO – berechtigtes Interesse am zuverlässigen Betrieb der Website). Dabei kann eine Datenverarbeitung in den USA stattfinden. Weitere Informationen finden Sie in der <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">Datenschutzerklärung von GitHub<span class="sr-only"> (öffnet in neuem Tab)</span></a>.</p>
 
     <h2>4. Kontaktaufnahme per E-Mail</h2>
     <p>Wenn Sie mir per E-Mail schreiben, verarbeite ich die von Ihnen übermittelten Daten (E-Mail-Adresse, Name, Inhalt der Nachricht), um Ihre Anfrage zu beantworten (Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO bei Anfragen zu einem möglichen Kauf, im Übrigen Art. 6 Abs. 1 lit. f DSGVO). Die Daten werden gelöscht, sobald sie für die Bearbeitung nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten bestehen.</p>
