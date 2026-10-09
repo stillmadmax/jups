@@ -12,7 +12,8 @@ See [PLAN.md](PLAN.md) for the full project plan.
 - `produkte/` — product overview and one page per product (`produkte/<slug>/`)
 - `ueber/`, `kontakt/`, `versand/` — about, contact, shipping
 - `impressum/`, `datenschutz/` — legal pages
-- `assets/img/` — optimized product photos and logo (sourced from jups-art.de)
+- `assets/img/` — optimized product photos and logo (sourced from jups-art.de and the Etsy shop)
+- `sitemap.xml`, `robots.txt` — use the final domain https://jups-art.de/
 - `assets/fonts.css`, `assets/fonts/` — self-hosted webfonts (Oswald, Inter)
 
 No build step: plain HTML, one shared CSS file, a few lines of vanilla JS

@@ -28,13 +28,16 @@ Products & categories (current catalogue):
 
 | Product | Category | Notes |
 |---|---|---|
-| Magnetischer Messerblock aus Fassdauben | Küchenaccessoires | ab 129 €; oak barrel staves with original winery markings, N45 magnets, steel base plate; ~13 gallery images |
+| Magnetischer Messerblock aus Fassdauben | Küchenaccessoires | ab 139 €; oak barrel staves with original winery markings, N45 magnets, steel base plate; ~13 gallery images |
 | Amboss aus Eisenbahnschienen | Amboss | compact anvils from railroad rails |
 | Eierbecher aus Eichenholz | Küchenaccessoires | |
 | Schneidebrett aus Eiche | Bretter | |
 | Kartenhalter XL aus Eichenholz | Kartenhalter | from reclaimed oak boards |
 | Foto auf Holz mit Epoxy-Versiegelung | Wanddekoration | |
 | Sonstiges / Auftragsarbeiten | Sonstiges | custom commissions |
+| XXL-Messerblock aus Fassdaube | Küchenaccessoires | 229 €; Etsy-only, added 2026-10-09 |
+| XXL-Messerblock aus Multiplex Birke | Küchenaccessoires | 229 €; Etsy-only, added 2026-10-09 |
+| Kartenhalter aus alter Fassdaube | Kartenhalter | 11,90 €; Etsy-only, added 2026-10-09 |
 
 Other existing content:
 
@@ -148,11 +151,17 @@ skin differs), the JupS logo, mobile-first responsiveness, and both CTAs
 4. **Design chosen (2026-08-23): Variant A „Werkstatt".** Variants B and C and
    the chooser page were removed; the full site was built from Variant A at the
    repo root (all products, Über, Kontakt, Versand, Impressum, Datenschutz).
+5. **Owner approved the site (2026-10-09).** Catalogue extended with the three
+   products that existed only on Etsy; their photos were taken from the Etsy listings.
+6. **Prices follow Etsy (2026-10-09)** — purchases happen there, so the site must match.
+7. **SEO URLs use https://jups-art.de/** (canonical, Open Graph, schema.org Product,
+   sitemap.xml, robots.txt) — they only become effective after the domain switch.
 
 ## 7. Open Questions
 
-1. Keep the existing logo (jups-logo.svg) unchanged?
-2. Later: should jups-art.de point to the new site (DNS/CNAME change)?
+1. Keep the existing logo (jups-logo.svg) unchanged? Recommendation: yes — the same
+   mark is branded onto the products.
+2. Next, together with Max: should jups-art.de point to the new site (DNS/CNAME change)?
 
 ## 8. Milestones
 
