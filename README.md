@@ -14,6 +14,8 @@ See [PLAN.md](PLAN.md) for the full project plan.
 - `impressum/`, `datenschutz/` — legal pages
 - `assets/img/` — optimized product photos and logo (sourced from jups-art.de and the Etsy shop)
 - `sitemap.xml`, `robots.txt` — use the final domain https://jups-art.de/
+- `CNAME` — custom domain for GitHub Pages (DNS for jups-art.de is managed at netcup)
+- `products/`, `contact/`, `versand-und-lieferzeit/` — redirect stubs from the old Grav URLs
 - `assets/fonts.css`, `assets/fonts/` — self-hosted webfonts (Oswald, Inter)
 
 No build step: plain HTML, one shared CSS file, a few lines of vanilla JS
